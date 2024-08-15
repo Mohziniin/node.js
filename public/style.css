@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+body{
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Noto Serif', serif;
+  max-width: 1200px;
+}
+p, h1, h2, h3, a, ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+/* General styles for blog list */
+.blogs-contents {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blogs-contents h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Style for each blog link */
+.blogs-contents a.single {
+  display: block;
+  padding: 20px;
+  margin: 10px 0;
+  border-left: 4px solid crimson;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s, padding-left 0.3s;
+}
+
+/* Hover effect for blog links */
+.blogs-contents a.single:hover {
+  background-color: #f9f9f9;
+  padding-left: 30px;
+}
+
+/* Style for blog titles */
+.blogs-contents .title {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+/* Hover effect for blog titles */
+.blogs-contents a.single:hover .title {
+  color: crimson;
+}
+
+/* Style for blog snippets */
+.blogs-contents .snippet {
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* details styles */
+.details {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background-color: crimson;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete:hover {
+  background-color: darkred;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Spacing between links */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #777; /* Default color */
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
+/* nav & footer styles */
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li{
+  list-style-type: none;
+  margin-left: 20px;
+}
+nav h1{
+  font-size: 3em;
+}
+nav p, nav a{
+  color: #777;
+  font-weight: 300;
+}
+footer{
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+h2{
+  margin-bottom: 40px;
+}
+h3{
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.content{
+  margin-left: 20px;
+}
+
+/* index styles */
+
+/* details styles */
+
+/* create styles */
+.create-blog form{
+  max-width: 400px;
+  margin: 0 auto;
+}
+.create-blog input,
+.create-blog textarea{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+.create-blog label{
+  display: block;
+  margin-top: 24px;
+}
+textarea{
+  height: 120px;
+}
+.create-blog button{
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
