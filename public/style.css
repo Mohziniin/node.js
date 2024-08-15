@@ -183,3 +183,73 @@ textarea{
   font-size: 1.2em;
   cursor: pointer;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px; /* Adjust the base font size for better readability */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; /* Reduce bottom margin for mobile */
+  }
+
+  nav h1 {
+    font-size: 2em; /* Slightly smaller heading for mobile */
+    margin-bottom: 20px; /* Add space between title and navigation */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px; /* Reduce spacing between links */
+  }
+
+  nav ul li {
+    margin-left: 0; /* Remove margin for better alignment */
+  }
+
+  .blogs-contents {
+    padding: 15px;
+  }
+
+  .blogs-contents h2 {
+    font-size: 1.8em;
+    text-align: center; /* Center the heading */
+  }
+
+  .blogs-contents a.single {
+    padding: 15px;
+    margin: 8px 0;
+  }
+
+  .blogs-contents .title {
+    font-size: 1.3em;
+  }
+
+  .delete {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+
+  .create-blog form {
+    max-width: 100%; /* Full width on mobile */
+    padding: 0 10px; /* Add some padding on the sides */
+  }
+
+  .create-blog input,
+  .create-blog textarea {
+    margin: 8px 0;
+    padding: 6px;
+  }
+
+  .create-blog button {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+}
